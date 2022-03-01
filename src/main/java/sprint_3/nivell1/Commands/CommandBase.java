@@ -1,4 +1,4 @@
-package sprint_3.Commands;
+package sprint_3.nivell1.Commands;
 
 public abstract class CommandBase {
     

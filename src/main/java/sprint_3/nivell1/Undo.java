@@ -3,10 +3,10 @@ package sprint_3.nivell1;
 import java.util.ArrayList;
 import java.util.List;
 
-import sprint_3.Commands.CommandBase;
-import sprint_3.Commands.DeleteAllCommand;
-import sprint_3.Commands.DeleteCommand;
-import sprint_3.Commands.HistoryCommand;
+import sprint_3.nivell1.Commands.CommandBase;
+import sprint_3.nivell1.Commands.DeleteAllCommand;
+import sprint_3.nivell1.Commands.DeleteCommand;
+import sprint_3.nivell1.Commands.HistoryCommand;
 
 /**
  * Clase que registra los comando entrados por consola.
