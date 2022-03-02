@@ -5,10 +5,21 @@ import sprint_3.nivell2.Contacts.Phones.KenyaPhone;
 import sprint_3.nivell2.Contacts.Phones.RomanianPhone;
 import sprint_3.nivell2.Contacts.Phones.SpainPhone;
 
+/**
+ * The phone factory
+ */
 public class PhoneFactory implements IAbstract<IPhone> {
     
+    /**
+     * Name of the factory, used to prodcue
+     */
     public static final String NAME = "phone"; 
     
+    /**
+     * Creates a new {@link IPhone} based on the name. 
+     * 
+     * @return -> new IPhone
+     */
     public IPhone create(final String name){
         switch (name.toLowerCase()){
             case SpainPhone.PHONE_ID:
@@ -20,6 +31,5 @@ public class PhoneFactory implements IAbstract<IPhone> {
         };
 
         return null;
-    }
-    
+    }    
 }
