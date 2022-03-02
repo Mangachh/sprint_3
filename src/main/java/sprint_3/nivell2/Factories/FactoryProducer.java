@@ -1,8 +1,8 @@
 package sprint_3.nivell2.Factories;
 
-public class AbstractFactory {
+public class FactoryProducer {
 
-    public IAbstract getFactory(final String name) {
+    public IAbstract<?>getFactory(final String name) {
         switch (name.toLowerCase()) {
             case PhoneFactory.NAME:
                 return new PhoneFactory();

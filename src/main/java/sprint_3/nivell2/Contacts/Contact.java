@@ -28,4 +28,11 @@ public class Contact {
     public void setPhone(IPhone phone) {
         this.phone = phone;
     }    
+
+    @Override
+    public String toString(){
+        String phoneSt = this.phone != null ? this.phone.getPhoneNumber(): "No Phone";
+        String addressSt = this.adress != null ? this.adress.getAddress() : "No address";
+        return String.format("Telefono: %s\nDireccion:\n%s", phoneSt, addressSt);
+    }
 }
